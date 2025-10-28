@@ -5,6 +5,7 @@ import OpenAI from "openai";
 
 // ✅ Inicialización de OpenAI
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+console.log("API Key detectada:", process.env.OPENAI_API_KEY ? "✅ Sí" : "❌ No");
 
 const app = express();
 
