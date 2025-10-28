@@ -19,7 +19,7 @@ async function getGroqResponse(prompt) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "llama3-70b-8192",
+        model: "llama-3.3-70b-versatile",
         messages: [
           { role: "system", content: "Sos un asistente virtual de un servicio técnico de PC. Responde de forma amable y profesional. Ofrecé diagnósticos básicos y la opción de agendar turnos." },
           { role: "user", content: prompt },
